@@ -1,0 +1,16 @@
+`timescale 1 ns/ 1 ps
+
+module top_tb();
+	
+	reg [7:0] data_mem[0:255];
+	
+	top top()
+	
+	initial	
+	begin
+		$readmemh("sin.txt", data_mem);
+	end
+	
+	
+	
+end module

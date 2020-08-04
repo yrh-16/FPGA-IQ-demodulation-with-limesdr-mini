@@ -1,0 +1,74 @@
+Info: Starting: Create simulation model
+Info: qsys-generate D:\Project\SDR_FPGA\20200719\cordic2.qsys --simulation=VERILOG --output-directory=D:\Project\SDR_FPGA\20200719\cordic2\simulation --family="MAX 10" --part=10M08DAF484C7G
+Progress: Loading 20200719/cordic2.qsys
+Progress: Reading input file
+Progress: Adding CORDIC_0 [altera_CORDIC 15.0]
+Progress: Parameterizing module CORDIC_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: cordic2: Generating cordic2 "cordic2" for SIM_VERILOG
+Info: CORDIC_0: D:/altera/quartus/dspba/backend/windows64/cmdPolyEval -target MAX10 -frequency 200 -name cordic2_CORDIC_0 -noChanValid -faithfulRounding -printMachineReadable -lang VHDL -speedgrade 7 FXPAtan2Expert 12 0 1 9 0 0
+Info: CORDIC_0: Latency on MAX 10 is 14 cycles
+Info: CORDIC_0: DSP Blocks Used: 0
+Info: CORDIC_0: LUTs Used: 1724
+Info: CORDIC_0: Memory Bits Used: 0
+Info: CORDIC_0: Memory Blocks Used: 0
+Warning: Using design file cordic2_cordic_0.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+Info: CORDIC_0: "cordic2" instantiated altera_CORDIC "CORDIC_0"
+Info: cordic2: Done "cordic2" with 2 modules, 2 files
+Info: ip-generate succeeded.
+Info: Finished: Create simulation model
+Info: Starting: Create Modelsim Project.
+Info: sim-script-gen --spd=D:\Project\SDR_FPGA\20200719\cordic2\cordic2.spd --output-directory=D:/Project/SDR_FPGA/20200719/cordic2/simulation/ --use-relative-paths=true
+Info: Doing: ip-make-simscript --spd=D:\Project\SDR_FPGA\20200719\cordic2\cordic2.spd --output-directory=D:/Project/SDR_FPGA/20200719/cordic2/simulation/ --use-relative-paths=true
+Info: Generating the following file(s) for MODELSIM simulator in D:/Project/SDR_FPGA/20200719/cordic2/simulation/ directory:
+Info: 	mentor/msim_setup.tcl
+Info: Generating the following file(s) for VCS simulator in D:/Project/SDR_FPGA/20200719/cordic2/simulation/ directory:
+Info: 	synopsys/vcs/vcs_setup.sh
+Info: Generating the following file(s) for VCSMX simulator in D:/Project/SDR_FPGA/20200719/cordic2/simulation/ directory:
+Info: 	synopsys/vcsmx/synopsys_sim.setup
+Info: 	synopsys/vcsmx/vcsmx_setup.sh
+Info: Generating the following file(s) for NCSIM simulator in D:/Project/SDR_FPGA/20200719/cordic2/simulation/ directory:
+Info: 	cadence/cds.lib
+Info: 	cadence/hdl.var
+Info: 	cadence/ncsim_setup.sh
+Info: 	1 .cds.lib files in cadence/cds_libs/ directory
+Info: Generating the following file(s) for RIVIERA simulator in D:/Project/SDR_FPGA/20200719/cordic2/simulation/ directory:
+Info: 	aldec/rivierapro_setup.tcl
+Info: Finished: Create Modelsim Project.
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate D:\Project\SDR_FPGA\20200719\cordic2.qsys --block-symbol-file --output-directory=D:\Project\SDR_FPGA\20200719\cordic2 --family="MAX 10" --part=10M08DAF484C7G
+Progress: Loading 20200719/cordic2.qsys
+Progress: Reading input file
+Progress: Adding CORDIC_0 [altera_CORDIC 15.0]
+Progress: Parameterizing module CORDIC_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: ip-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate D:\Project\SDR_FPGA\20200719\cordic2.qsys --synthesis=VERILOG --output-directory=D:\Project\SDR_FPGA\20200719\cordic2\synthesis --family="MAX 10" --part=10M08DAF484C7G
+Progress: Loading 20200719/cordic2.qsys
+Progress: Reading input file
+Progress: Adding CORDIC_0 [altera_CORDIC 15.0]
+Progress: Parameterizing module CORDIC_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: cordic2: Generating cordic2 "cordic2" for QUARTUS_SYNTH
+Info: CORDIC_0: D:/altera/quartus/dspba/backend/windows64/cmdPolyEval -target MAX10 -frequency 200 -name cordic2_CORDIC_0 -noChanValid -faithfulRounding -printMachineReadable -lang VHDL -speedgrade 7 FXPAtan2Expert 12 0 1 9 0 0
+Info: CORDIC_0: Latency on MAX 10 is 14 cycles
+Info: CORDIC_0: DSP Blocks Used: 0
+Info: CORDIC_0: LUTs Used: 1724
+Info: CORDIC_0: Memory Bits Used: 0
+Info: CORDIC_0: Memory Blocks Used: 0
+Info: CORDIC_0: "cordic2" instantiated altera_CORDIC "CORDIC_0"
+Info: cordic2: Done "cordic2" with 2 modules, 4 files
+Info: ip-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

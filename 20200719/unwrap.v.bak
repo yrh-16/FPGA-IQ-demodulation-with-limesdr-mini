@@ -1,0 +1,27 @@
+module unwrap(clk, inphase, outphase);
+   parameter signed pi = 12'b001100100100;
+	parameter signed pi_half = 12'b000110010010;
+   input [11:0]inphase;
+	input clk;
+	output outphase;
+	reg [11:0]outphase;
+	reg signed [11:0]phase;
+	reg signed [11:0]phase_reg;
+	//Delay signal to have p(i) and p(i-1)
+	always @(posedge clk)
+	begin
+	phase <= inphase;
+	phase_reg <= phase;
+	end
+	
+	always @(posedge clk)
+	begin
+	   if((phase-phase_reg)> pi_half && phase != 12'b0 && phase_reg != 12'b0)
+		  outphase <= phase - pi;
+		else if((phase_reg-phase)> pi_half && phase != 12'b0 && phase_reg != 12'b0)
+		  outphase <= phase + pi;
+	   else
+		  outphase <=phase;
+	end
+
+endmodule

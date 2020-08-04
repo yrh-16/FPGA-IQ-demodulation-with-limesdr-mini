@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy
+ date="2020.07.21.22:01:23"
+ outputDirectory="D:/Project/SDR_FPGA/20200719/cordic2/">
+ <perimeter>
+  <parameter
+     name="AUTO_GENERATION_ID"
+     type="Integer"
+     defaultValue="0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_UNIQUE_ID"
+     type="String"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_FAMILY"
+     type="String"
+     defaultValue="MAX 10"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE"
+     type="String"
+     defaultValue="10M08DAF484C7G"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_SPEEDGRADE"
+     type="String"
+     defaultValue="7"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <interface name="areset" kind="reset" start="0">
+   <property name="associatedClock" value="clk" />
+   <property name="synchronousEdges" value="DEASSERT" />
+   <port name="areset" direction="input" role="reset" width="1" />
+  </interface>
+  <interface name="clk" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="clk" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="q" kind="conduit" start="0">
+   <property name="associatedClock" value="clk" />
+   <property name="associatedReset" value="" />
+   <port name="q" direction="output" role="q" width="12" />
+  </interface>
+  <interface name="x" kind="conduit" start="0">
+   <property name="associatedClock" value="clk" />
+   <property name="associatedReset" value="areset" />
+   <port name="x" direction="input" role="x" width="12" />
+  </interface>
+  <interface name="y" kind="conduit" start="0">
+   <property name="associatedClock" value="clk" />
+   <property name="associatedReset" value="areset" />
+   <port name="y" direction="input" role="y" width="12" />
+  </interface>
+ </perimeter>
+ <entity
+   path=""
+   parameterizationKey="cordic2:1.0:AUTO_CLK_CLOCK_DOMAIN=-1,AUTO_CLK_CLOCK_RATE=-1,AUTO_CLK_RESET_DOMAIN=-1,AUTO_DEVICE=10M08DAF484C7G,AUTO_DEVICE_FAMILY=MAX 10,AUTO_DEVICE_SPEEDGRADE=7,AUTO_GENERATION_ID=1595340072,AUTO_UNIQUE_ID=(altera_CORDIC:15.0:ALL_function=ATAN2,FUNCTION_FAMILY=ALL,LUTSize=6,RES_DSP_param=0,RES_LUT_param=0,RES_MBIT_param=0,RES_MBLOCK_param=0,SFCompensation=false,derivedfunction=ATAN2,force_elaborate=0,frequency_feedback=0,frequency_target=200,fxpt_in_2_fraction_derived=0,fxpt_in_2_sign_derived=1,fxpt_in_2_width_derived=32,fxpt_in_fraction=0,fxpt_in_fraction_derived=0,fxpt_in_sign=1,fxpt_in_sign_derived=1,fxpt_in_width=12,fxpt_in_width_derived=32,fxpt_out_2_fraction_derived=0,fxpt_out_2_sign_derived=1,fxpt_out_2_width_derived=32,fxpt_out_fraction=9,fxpt_out_fraction_derived=0,fxpt_out_sign=1,fxpt_out_sign_derived=1,fxpt_out_width=32,fxpt_out_width_derived=12,gen_enable=false,latency_feedback=0,latency_target=2,performance_goal=frequency,report_resources_to_xml=false,selected_device_family=MAX 10,selected_device_speedgrade=7,specifyLUTs=false,useLUTs=false,validation_failed=false)"
+   instancePathKey="cordic2"
+   kind="cordic2"
+   version="1.0"
+   name="cordic2">
+  <parameter name="AUTO_CLK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_GENERATION_ID" value="1595340072" />
+  <parameter name="AUTO_DEVICE" value="10M08DAF484C7G" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="MAX 10" />
+  <parameter name="AUTO_CLK_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_CLK_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_UNIQUE_ID" value="" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="7" />
+  <generatedFiles>
+   <file
+       path="D:/Project/SDR_FPGA/20200719/cordic2/synthesis/cordic2.v"
+       type="VERILOG" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="D:/Project/SDR_FPGA/20200719/cordic2/synthesis/submodules/dspba_library_package.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="D:/Project/SDR_FPGA/20200719/cordic2/synthesis/submodules/dspba_library.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="D:/Project/SDR_FPGA/20200719/cordic2/synthesis/submodules/cordic2_CORDIC_0.vhd"
+       type="VHDL"
+       attributes="" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file path="D:/Project/SDR_FPGA/20200719/cordic2.qsys" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="D:/altera/ip/altera/dsp/altera_CORDIC/source/altera_CORDIC_hw.tcl" />
+  </childSourceFiles>
+  <messages>
+   <message level="Debug" culprit="cordic2">queue size: 0 starting:cordic2 "cordic2"</message>
+   <message level="Progress" culprit="min"></message>
+   <message level="Progress" culprit="max"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Debug">Transform: CustomInstructionTransform</message>
+   <message level="Debug">No custom instruction connections, skipping transform </message>
+   <message level="Debug" culprit="merlin_custom_instruction_transform"><![CDATA[After transform: <b>1</b> modules, <b>0</b> connections]]></message>
+   <message level="Debug">Transform: MMTransform</message>
+   <message level="Debug">Transform: InterruptMapperTransform</message>
+   <message level="Debug">Transform: InterruptSyncTransform</message>
+   <message level="Debug">Transform: InterruptFanoutTransform</message>
+   <message level="Debug">Transform: AvalonStreamingTransform</message>
+   <message level="Debug">Transform: ResetAdaptation</message>
+   <message level="Debug" culprit="cordic2"><![CDATA["<b>cordic2</b>" reuses <b>altera_CORDIC</b> "<b>submodules/cordic2_CORDIC_0</b>"]]></message>
+   <message level="Debug" culprit="cordic2">queue size: 0 starting:altera_CORDIC "submodules/cordic2_CORDIC_0"</message>
+   <message level="Info" culprit="CORDIC_0">D:/altera/quartus/dspba/backend/windows64/cmdPolyEval -target MAX10 -frequency 200 -name cordic2_CORDIC_0 -noChanValid -faithfulRounding -printMachineReadable -lang VHDL -speedgrade 7 FXPAtan2Expert 12 0 1 9 0 0</message>
+   <message level="Info" culprit="CORDIC_0">Latency on MAX 10 is 14 cycles</message>
+   <message level="Info" culprit="CORDIC_0">DSP Blocks Used: 0</message>
+   <message level="Info" culprit="CORDIC_0">LUTs Used: 1724</message>
+   <message level="Info" culprit="CORDIC_0">Memory Bits Used: 0</message>
+   <message level="Info" culprit="CORDIC_0">Memory Blocks Used: 0</message>
+   <message level="Info" culprit="CORDIC_0"><![CDATA["<b>cordic2</b>" instantiated <b>altera_CORDIC</b> "<b>CORDIC_0</b>"]]></message>
+  </messages>
+ </entity>
+ <entity
+   path="submodules/"
+   parameterizationKey="altera_CORDIC:15.0:ALL_function=ATAN2,FUNCTION_FAMILY=ALL,LUTSize=6,RES_DSP_param=0,RES_LUT_param=0,RES_MBIT_param=0,RES_MBLOCK_param=0,SFCompensation=false,derivedfunction=ATAN2,force_elaborate=0,frequency_feedback=0,frequency_target=200,fxpt_in_2_fraction_derived=0,fxpt_in_2_sign_derived=1,fxpt_in_2_width_derived=32,fxpt_in_fraction=0,fxpt_in_fraction_derived=0,fxpt_in_sign=1,fxpt_in_sign_derived=1,fxpt_in_width=12,fxpt_in_width_derived=32,fxpt_out_2_fraction_derived=0,fxpt_out_2_sign_derived=1,fxpt_out_2_width_derived=32,fxpt_out_fraction=9,fxpt_out_fraction_derived=0,fxpt_out_sign=1,fxpt_out_sign_derived=1,fxpt_out_width=32,fxpt_out_width_derived=12,gen_enable=false,latency_feedback=0,latency_target=2,performance_goal=frequency,report_resources_to_xml=false,selected_device_family=MAX 10,selected_device_speedgrade=7,specifyLUTs=false,useLUTs=false,validation_failed=false"
+   instancePathKey="cordic2:.:CORDIC_0"
+   kind="altera_CORDIC"
+   version="15.0"
+   name="cordic2_CORDIC_0">
+  <parameter name="gen_enable" value="false" />
+  <parameter name="fxpt_in_sign_derived" value="1" />
+  <parameter name="useLUTs" value="false" />
+  <parameter name="fxpt_out_2_sign_derived" value="1" />
+  <parameter name="fxpt_in_fraction" value="0" />
+  <parameter name="fxpt_out_width" value="32" />
+  <parameter name="selected_device_family" value="MAX 10" />
+  <parameter name="fxpt_out_fraction" value="9" />
+  <parameter name="fxpt_in_2_fraction_derived" value="0" />
+  <parameter name="fxpt_in_2_width_derived" value="32" />
+  <parameter name="fxpt_in_2_sign_derived" value="1" />
+  <parameter name="validation_failed" value="false" />
+  <parameter name="ALL_function" value="ATAN2" />
+  <parameter name="force_elaborate" value="0" />
+  <parameter name="latency_target" value="2" />
+  <parameter name="LUTSize" value="6" />
+  <parameter name="fxpt_out_width_derived" value="12" />
+  <parameter name="fxpt_out_fraction_derived" value="0" />
+  <parameter name="frequency_target" value="200" />
+  <parameter name="fxpt_out_sign" value="1" />
+  <parameter name="SFCompensation" value="false" />
+  <parameter name="fxpt_in_fraction_derived" value="0" />
+  <parameter name="fxpt_in_width" value="12" />
+  <parameter name="fxpt_in_sign" value="1" />
+  <parameter name="fxpt_out_2_fraction_derived" value="0" />
+  <parameter name="selected_device_speedgrade" value="7" />
+  <parameter name="derivedfunction" value="ATAN2" />
+  <parameter name="fxpt_out_2_width_derived" value="32" />
+  <parameter name="specifyLUTs" value="false" />
+  <parameter name="report_resources_to_xml" value="false" />
+  <parameter name="latency_feedback" value="0" />
+  <parameter name="fxpt_out_sign_derived" value="1" />
+  <parameter name="FUNCTION_FAMILY" value="ALL" />
+  <parameter name="fxpt_in_width_derived" value="32" />
+  <parameter name="performance_goal" value="frequency" />
+  <parameter name="frequency_feedback" value="0" />
+  <generatedFiles>
+   <file
+       path="D:/Project/SDR_FPGA/20200719/cordic2/synthesis/submodules/dspba_library_package.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="D:/Project/SDR_FPGA/20200719/cordic2/synthesis/submodules/dspba_library.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="D:/Project/SDR_FPGA/20200719/cordic2/synthesis/submodules/cordic2_CORDIC_0.vhd"
+       type="VHDL"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles/>
+  <sourceFiles>
+   <file
+       path="D:/altera/ip/altera/dsp/altera_CORDIC/source/altera_CORDIC_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator instantiator="cordic2" as="CORDIC_0" />
+  <messages>
+   <message level="Debug" culprit="cordic2">queue size: 0 starting:altera_CORDIC "submodules/cordic2_CORDIC_0"</message>
+   <message level="Info" culprit="CORDIC_0">D:/altera/quartus/dspba/backend/windows64/cmdPolyEval -target MAX10 -frequency 200 -name cordic2_CORDIC_0 -noChanValid -faithfulRounding -printMachineReadable -lang VHDL -speedgrade 7 FXPAtan2Expert 12 0 1 9 0 0</message>
+   <message level="Info" culprit="CORDIC_0">Latency on MAX 10 is 14 cycles</message>
+   <message level="Info" culprit="CORDIC_0">DSP Blocks Used: 0</message>
+   <message level="Info" culprit="CORDIC_0">LUTs Used: 1724</message>
+   <message level="Info" culprit="CORDIC_0">Memory Bits Used: 0</message>
+   <message level="Info" culprit="CORDIC_0">Memory Blocks Used: 0</message>
+   <message level="Info" culprit="CORDIC_0"><![CDATA["<b>cordic2</b>" instantiated <b>altera_CORDIC</b> "<b>CORDIC_0</b>"]]></message>
+  </messages>
+ </entity>
+</deploy>

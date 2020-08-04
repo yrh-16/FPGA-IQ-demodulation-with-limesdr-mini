@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="simulation/submodules/cordic2_CORDIC_0.vo"
+   type="VERILOG"
+   library="CORDIC_0" />
+ <file path="simulation/cordic2.v" type="VERILOG" />
+ <topLevel name="cordic2" />
+ <deviceFamily name="max10" />
+</simPackage>

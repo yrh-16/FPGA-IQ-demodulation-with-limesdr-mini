@@ -1,0 +1,142 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Project/SDR_FPGA/20200719/simulation/modelsim
+vcordic2
+Z1 !s110 1595594281
+!i10b 1
+!s100 ]4D^ePa^GE`oTelS^i=n70
+ILJC3Tf^fW]9aVie`2;F[41
+V`JN@9S9cnhjKRR_L]QIcM3
+R0
+w1595340074
+8D:/Project/SDR_FPGA/20200719/cordic2/synthesis/cordic2.v
+FD:/Project/SDR_FPGA/20200719/cordic2/synthesis/cordic2.v
+L0 6
+OV;L;10.3d;59
+r1
+!s85 0
+31
+!s108 1595594281.136000
+!s107 D:/Project/SDR_FPGA/20200719/cordic2/synthesis/cordic2.v|
+!s90 -reportprogress|300|-vlog01compat|-work|cordic2|+incdir+D:/Project/SDR_FPGA/20200719/cordic2/synthesis|D:/Project/SDR_FPGA/20200719/cordic2/synthesis/cordic2.v|
+!i113 1
+o-vlog01compat -work cordic2
+!s92 -vlog01compat -work cordic2 +incdir+D:/Project/SDR_FPGA/20200719/cordic2/synthesis
+Ecordic2_cordic_0
+Z2 w1595340083
+Z3 DPx3 lpm 14 lpm_components 0 22 4J@JVnz0@^T1iA`f^fRg21
+Z4 DPx9 altera_mf 20 altera_mf_components 0 22 :zX8E]9f?PCk8X:Y[X97:1
+Z5 DPx4 work 21 dspba_library_package 0 22 No@1lP3giBj^iR369D4ze3
+Z6 DPx4 ieee 9 math_real 0 22 Sk6CSihbPL<f[^Shm]=KX0
+Z7 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z8 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z9 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z10 8D:/Project/SDR_FPGA/20200719/cordic2/synthesis/submodules/cordic2_CORDIC_0.vhd
+Z11 FD:/Project/SDR_FPGA/20200719/cordic2/synthesis/submodules/cordic2_CORDIC_0.vhd
+l0
+L34
+Vg22ao1MbOn4I7^<S^O;NR2
+!s100 4<l4DoNhdkz?dE^MGnLM]3
+Z12 OV;C;10.3d;59
+31
+Z13 !s110 1595594282
+!i10b 1
+Z14 !s108 1595594282.390000
+Z15 !s90 -reportprogress|300|-93|-work|cordic2|D:/Project/SDR_FPGA/20200719/cordic2/synthesis/submodules/cordic2_CORDIC_0.vhd|
+Z16 !s107 D:/Project/SDR_FPGA/20200719/cordic2/synthesis/submodules/cordic2_CORDIC_0.vhd|
+!i113 1
+Z17 o-93 -work cordic2
+Z18 tExplicit 1
+Anormal
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+Z19 DEx4 work 16 cordic2_cordic_0 0 22 g22ao1MbOn4I7^<S^O;NR2
+l510
+L44
+Z20 VIgRHTChA:]OG_ia3YzEK^1
+Z21 !s100 Q@9b2SlPm@QmM1fL43HKf3
+R12
+31
+R13
+!i10b 1
+R14
+R15
+R16
+!i113 1
+R17
+R18
+Edspba_delay
+R2
+R5
+R8
+R9
+R0
+Z22 8D:/Project/SDR_FPGA/20200719/cordic2/synthesis/submodules/dspba_library.vhd
+Z23 FD:/Project/SDR_FPGA/20200719/cordic2/synthesis/submodules/dspba_library.vhd
+l0
+L17
+Ve1=U3n><d8I3FzQ3_YbZZ2
+!s100 I;H1=zml`_C58M^RQgQ_?1
+R12
+31
+R13
+!i10b 1
+Z24 !s108 1595594281.988000
+Z25 !s90 -reportprogress|300|-93|-work|cordic2|D:/Project/SDR_FPGA/20200719/cordic2/synthesis/submodules/dspba_library.vhd|
+Z26 !s107 D:/Project/SDR_FPGA/20200719/cordic2/synthesis/submodules/dspba_library.vhd|
+!i113 1
+R17
+R18
+Adelay
+R5
+R8
+R9
+DEx4 work 11 dspba_delay 0 22 e1=U3n><d8I3FzQ3_YbZZ2
+l35
+L32
+VVD<mQ?PWCLb46cQF<QPEF3
+!s100 242@TKCVL32O<3ldd>9>T2
+R12
+31
+R13
+!i10b 1
+R24
+R25
+R26
+!i113 1
+R17
+R18
+Pdspba_library_package
+R8
+R9
+R2
+R0
+8D:/Project/SDR_FPGA/20200719/cordic2/synthesis/submodules/dspba_library_package.vhd
+FD:/Project/SDR_FPGA/20200719/cordic2/synthesis/submodules/dspba_library_package.vhd
+l0
+L16
+VNo@1lP3giBj^iR369D4ze3
+!s100 Bi@XXIh4l[a0:VIDM?Rnd3
+R12
+31
+R1
+!i10b 1
+!s108 1595594281.446000
+!s90 -reportprogress|300|-93|-work|cordic2|D:/Project/SDR_FPGA/20200719/cordic2/synthesis/submodules/dspba_library_package.vhd|
+!s107 D:/Project/SDR_FPGA/20200719/cordic2/synthesis/submodules/dspba_library_package.vhd|
+!i113 1
+R17
+R18

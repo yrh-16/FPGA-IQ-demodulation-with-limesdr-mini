@@ -1,0 +1,18 @@
+# system info cordic2 on 2020.07.21.22:01:02
+system_info:
+name,value
+DEVICE,10M08DAF484C7G
+DEVICE_FAMILY,MAX 10
+GENERATION_ID,1595340031
+#
+#
+# Files generated for cordic2 on 2020.07.21.22:01:02
+files:
+filepath,kind,attributes,module,is_top
+simulation/cordic2.v,VERILOG,,cordic2,true
+simulation/submodules/cordic2_CORDIC_0.vo,VERILOG,,cordic2_CORDIC_0,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+cordic2.CORDIC_0,cordic2_CORDIC_0

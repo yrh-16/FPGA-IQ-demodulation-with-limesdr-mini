@@ -1,0 +1,16 @@
+<sld_project_info>
+  <project>
+    <hash md5_digest_80b="d6b338eda6b8f0889860"/>
+  </project>
+  <file_info>
+    <file device="10M08DAF484C7G" path="filter.sof" usercode="0xFFFFFFFF"/>
+  </file_info>
+  <sld_infos>
+    <sld_info hpath="cordic2:actan" name="actan">
+      <assignment_values>
+        <assignment_value text="QSYS_NAME cordic2 HAS_SOPCINFO 1 GENERATION_ID 1595340072"/>
+      </assignment_values>
+      <parameters/>
+    </sld_info>
+  </sld_infos>
+</sld_project_info>

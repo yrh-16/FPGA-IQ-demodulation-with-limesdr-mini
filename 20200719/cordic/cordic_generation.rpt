@@ -1,0 +1,34 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate D:\Project\SDR_FPGA\20200719\cordic.qsys --block-symbol-file --output-directory=D:\Project\SDR_FPGA\20200719\cordic --family="MAX 10" --part=10M08DAF484C7G
+Progress: Loading 20200719/cordic.qsys
+Progress: Reading input file
+Progress: Adding CORDIC_0 [altera_CORDIC 15.0]
+Progress: Parameterizing module CORDIC_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: ip-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate D:\Project\SDR_FPGA\20200719\cordic.qsys --synthesis=VHDL --output-directory=D:\Project\SDR_FPGA\20200719\cordic\synthesis --family="MAX 10" --part=10M08DAF484C7G
+Progress: Loading 20200719/cordic.qsys
+Progress: Reading input file
+Progress: Adding CORDIC_0 [altera_CORDIC 15.0]
+Progress: Parameterizing module CORDIC_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: cordic: Generating cordic "cordic" for QUARTUS_SYNTH
+Info: CORDIC_0: D:/altera/quartus/dspba/backend/windows64/cmdPolyEval -target MAX10 -frequency 200 -name cordic_CORDIC_0 -noChanValid -faithfulRounding -printMachineReadable -lang VHDL -speedgrade 7 FXPAtan2Expert 12 0 1 9 0 0
+Info: CORDIC_0: Latency on MAX 10 is 14 cycles
+Info: CORDIC_0: DSP Blocks Used: 0
+Info: CORDIC_0: LUTs Used: 1724
+Info: CORDIC_0: Memory Bits Used: 0
+Info: CORDIC_0: Memory Blocks Used: 0
+Info: CORDIC_0: "cordic" instantiated altera_CORDIC "CORDIC_0"
+Info: cordic: Done "cordic" with 2 modules, 4 files
+Info: ip-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

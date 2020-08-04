@@ -1,0 +1,201 @@
+# Reading D:/altera/modelsim_ase/tcl/vsim/pref.tcl
+# do filter_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim PE vmap 10.3d Lib Mapping Utility 2014.10 Oct  7 2014
+# vmap -modelsim_quiet work rtl_work 
+# Copying D:/altera/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:/altera/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlib cordic2
+# ** Warning: (vlib-34) Library already exists at "cordic2".
+# 
+# vmap cordic2 cordic2
+# Model Technology ModelSim PE vmap 10.3d Lib Mapping Utility 2014.10 Oct  7 2014
+# vmap -modelsim_quiet cordic2 cordic2 
+# Modifying modelsim.ini
+# vlog -vlog01compat -work cordic2 +incdir+D:/Project/SDR_FPGA/20200719/cordic2/synthesis {D:/Project/SDR_FPGA/20200719/cordic2/synthesis/cordic2.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 20:38:01 on Jul 24,2020
+# vlog -reportprogress 300 -vlog01compat -work cordic2 "+incdir+D:/Project/SDR_FPGA/20200719/cordic2/synthesis" D:/Project/SDR_FPGA/20200719/cordic2/synthesis/cordic2.v 
+# -- Compiling module cordic2
+# 
+# Top level modules:
+# 	cordic2
+# End time: 20:38:01 on Jul 24,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Project/SDR_FPGA/20200719 {D:/Project/SDR_FPGA/20200719/unwrap.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 20:38:01 on Jul 24,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Project/SDR_FPGA/20200719" D:/Project/SDR_FPGA/20200719/unwrap.v 
+# -- Compiling module unwrap
+# 
+# Top level modules:
+# 	unwrap
+# End time: 20:38:01 on Jul 24,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Project/SDR_FPGA/20200719 {D:/Project/SDR_FPGA/20200719/top.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 20:38:01 on Jul 24,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Project/SDR_FPGA/20200719" D:/Project/SDR_FPGA/20200719/top.v 
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 20:38:01 on Jul 24,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work cordic2 {D:/Project/SDR_FPGA/20200719/cordic2/synthesis/submodules/dspba_library_package.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 20:38:01 on Jul 24,2020
+# vcom -reportprogress 300 -93 -work cordic2 D:/Project/SDR_FPGA/20200719/cordic2/synthesis/submodules/dspba_library_package.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package dspba_library_package
+# End time: 20:38:01 on Jul 24,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/Project/SDR_FPGA/20200719/filter.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 20:38:01 on Jul 24,2020
+# vcom -reportprogress 300 -93 -work work D:/Project/SDR_FPGA/20200719/filter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity filter
+# -- Compiling architecture rtl of filter
+# End time: 20:38:01 on Jul 24,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work cordic2 {D:/Project/SDR_FPGA/20200719/cordic2/synthesis/submodules/dspba_library.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 20:38:01 on Jul 24,2020
+# vcom -reportprogress 300 -93 -work cordic2 D:/Project/SDR_FPGA/20200719/cordic2/synthesis/submodules/dspba_library.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package dspba_library_package
+# -- Compiling entity dspba_delay
+# -- Compiling architecture delay of dspba_delay
+# End time: 20:38:02 on Jul 24,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work cordic2 {D:/Project/SDR_FPGA/20200719/cordic2/synthesis/submodules/cordic2_CORDIC_0.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 20:38:02 on Jul 24,2020
+# vcom -reportprogress 300 -93 -work cordic2 D:/Project/SDR_FPGA/20200719/cordic2/synthesis/submodules/cordic2_CORDIC_0.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package dspba_library_package
+# -- Loading package altera_mf_components
+# -- Loading package LPM_COMPONENTS
+# -- Compiling entity cordic2_CORDIC_0
+# -- Compiling architecture normal of cordic2_CORDIC_0
+# End time: 20:38:02 on Jul 24,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/Project/SDR_FPGA/20200719 {D:/Project/SDR_FPGA/20200719/top_tb.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 20:38:02 on Jul 24,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Project/SDR_FPGA/20200719" D:/Project/SDR_FPGA/20200719/top_tb.v 
+# -- Compiling module top_tb
+# ** Warning: D:/Project/SDR_FPGA/20200719/top_tb.v(6): (vlog-2608) Keyword "unsigned" not allowed here in Verilog 2001.
+# 
+# 
+# Top level modules:
+# 	top_tb
+# End time: 20:38:02 on Jul 24,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -L cordic2 -voptargs="+acc"  top_tb
+# vsim -gui "+altera" -l msim_transcript -do "filter_run_msim_rtl_verilog.do" 
+# Start time: 20:38:03 on Jul 24,2020
+# Loading work.top_tb
+# Loading work.top
+# Loading cordic2.cordic2
+# Loading work.unwrap
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.filter(rtl)
+# Loading ieee.math_real(body)
+# Loading cordic2.dspba_library_package
+# Loading altera_mf.altera_mf_components
+# Loading lpm.lpm_components
+# Loading cordic2.cordic2_cordic_0(normal)
+# Loading cordic2.dspba_delay(delay)
+# 
+# add wave *
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: Administrator  Hostname: PC-20200201ZOJW  ProcessID: 21416
+# 
+#           Attempting to use alternate WLF file "./wlftrq6gsh".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftrq6gsh
+# 
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Warning: (vsim-PLI-3409) Illegal binary digit ';' in data on line 257 of file "C:/Users/Administrator/Desktop/sin.txt".    : D:/Project/SDR_FPGA/20200719/top_tb.v(14)
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb
+# ** Note: $stop    : D:/Project/SDR_FPGA/20200719/top_tb.v(36)
+#    Time: 1 ms  Iteration: 0  Instance: /top_tb
+# Break in Module top_tb at D:/Project/SDR_FPGA/20200719/top_tb.v line 36
+# Simulation Breakpoint: Break in Module top_tb at D:/Project/SDR_FPGA/20200719/top_tb.v line 36
+# MACRO ./filter_run_msim_rtl_verilog.do PAUSED at line 25
+add wave -position insertpoint  \
+sim:/top_tb/top/filter_out_I
+add wave -position insertpoint  \
+sim:/top_tb/top/filter_out_I
+run 10000000ns
+run 1000000000ns
+# Break key hit
+restart -f
+add wave -position insertpoint  \
+sim:/top_tb/top/filter_out_Q
+restart -f
+add dataflow \
+sim:/top_tb/top/filter_out_Q 
+# WARNING: No extended dataflow license exists
+run 100000000ns
+# GetModuleFileName: 找不到指定的模块。
+# 
+# 
+# ** Warning: (vsim-PLI-3409) Illegal binary digit ';' in data on line 257 of file "C:/Users/Administrator/Desktop/sin.txt".    : D:/Project/SDR_FPGA/20200719/top_tb.v(14)
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb
+# ** Note: $stop    : D:/Project/SDR_FPGA/20200719/top_tb.v(36)
+#    Time: 1 ms  Iteration: 0  Instance: /top_tb
+# Break in Module top_tb at D:/Project/SDR_FPGA/20200719/top_tb.v line 36
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+run 100000000000ns
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Break key hit
+# Simulation stop requested.
+# End time: 20:50:26 on Jul 24,2020, Elapsed time: 0:12:23
+# Errors: 17, Warnings: 5
